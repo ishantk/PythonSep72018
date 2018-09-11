@@ -102,3 +102,8 @@ print("type of population is",type(population))
 # Problem
 # Compute Who Won in Elections ?
 # PartyA   PartyB
+
+print(population[0])
+print(population[1])
+
+print(population[0][0])
