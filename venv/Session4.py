@@ -50,3 +50,4 @@ def canVote(age=10):
 
 print("If Jennie's age is not known?",canVote())
 print("If John is 18 years old can he vote?",canVote(18))
+
