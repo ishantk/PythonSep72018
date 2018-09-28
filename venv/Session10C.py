@@ -15,4 +15,4 @@ ec()
 
 print(e)
 # print(e.__str__())
-print(e.__repr__())
+# print(e.__repr__())
