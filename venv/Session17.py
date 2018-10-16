@@ -75,13 +75,11 @@ else:
 print(names.__contains__("John"))
 
 
-
 """ 
 HW:Source Code Analysis
 1. Read a Python Source File.
 2. Count all the references in source code     -> list1
 3. Count all the literals in source code       -> list2
 4. Count how many if/else used in source code  -> list3
-5. Count how many times we printed some output -> list4
-    
+5. Count how many times we printed some output -> list4   
 """
