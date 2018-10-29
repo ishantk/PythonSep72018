@@ -12,6 +12,7 @@ try:
     c = a / b
 except Exception as e: # Because Exception is Parent to all the Exception Classes
     print("Some Error Occurred !! ",e)
+    print(type(e))
 finally:
     print("This is executed at any cost !!")
 # except ZeroDivisionError as zRef:
