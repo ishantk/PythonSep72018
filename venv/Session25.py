@@ -7,7 +7,9 @@ Y = [2, 4, 5, 4, 5]
 data = stats.linregress(X,Y)
 print(data[0]) # b1 -> Slope
 print(data[1]) # b0
-
+print("=========")
+print(data)
+print("=========")
 plt.plot(X,Y,"ro")
 plt.xlabel("X")
 plt.ylabel("Y")
@@ -64,9 +66,29 @@ Machine Learning:
 
 			X is Data which we have already
 			Y is Prediction
-
+			
+			Mean Square Error (MSE)
+			
+			Mean X (X') : 3
+	        Mean Y (Y') : 4
+			
+	X     Y     Y"      Y-Y'   Sq(Y-Y')   Y"-Y'  Sq(Y"-Y')
+	1     2     2.8	     -2         4     -1.2       1.44
+	2     4     3.4	      0         0     -0.6       0.36
+	3     5     4         1         1        0          0
+	4     4     4.6       0         0      0.6       0.36
+	5     5     5.2       1         1      1.2       1.44
+                              --------          ----------
+                                    6                3.6
+                                    
+                         MSE: Sq(Y"-Y') / Sq(Y-Y')
+                                    3.6 / 6
+                         MSE: 0.6
+                         
+                         0 to 1                                  
 """
 # Do Mathematics for Prediction | OOPS
 # Read Any CSV File to predict
 # Predict how will a Singer perform in upcoming year(s)
 # WebScrap Data form Website -> Convert it to CSV File -> Analyze the same to predict
+
