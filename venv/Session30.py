@@ -9,7 +9,9 @@ print(iris.data)
 print("===========TARGET==========")
 print(iris.target)
 
+
 clf = tree.DecisionTreeClassifier()
+
 # Training the ML Model | Supervised Learning
 clf = clf.fit(iris.data,iris.target)
 
@@ -17,6 +19,7 @@ inputData = [6.0, 3.2, 5.3, 1.9]
 predictedClass = clf.predict([inputData])
 
 print("Flower Type is:",predictedClass)
+
 
 import graphviz
 
